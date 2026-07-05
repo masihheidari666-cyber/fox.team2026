@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>MILAD PROFILE</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial;
+    }
+
+    body {
+      background: #05070d;
+      color: white;
+      overflow-x: hidden;
+    }
+
+    /* BACKGROUND */
+
+    .bg-logo {
+      position: fixed;
+
+      top: 50%;
+      left: 50%;
+
+      transform: translate(-50%, -50%);
+
+      width: 1000px;
+      height: 1000px;
+
+      background-image: url("member/logo.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+
+      opacity: 0.28;
+
+      filter: blur(2px);
+
+      z-index: 0;
+
+      pointer-events: none;
+
+      animation: logoFloat 8s ease-in-out infinite;
+    }
+
+    /* HEADER */
+
+    .header {
+      width: 100%;
+      padding: 25px;
+      text-align: center;
+      border-bottom: 1px solid rgba(255, 215, 0, 0.2);
+      background: rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(8px);
+    }
+
+    .header h1 {
+      color: gold;
+      font-size: 32px;
+      letter-spacing: 3px;
+    }
+
+    .header p {
+      margin-top: 10px;
+      color: #999;
+      letter-spacing: 2px;
+    }
+
+    /* PROFILE CARD */
+
+    .profile-container {
+      width: 90%;
+      max-width: 1100px;
+      margin: 50px auto;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 215, 0, 0.2);
+      border-radius: 25px;
+      padding: 40px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 30px rgba(255, 215, 0, 0.08);
+    }
+
+    /* TOP */
+
+    .top-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      align-items: center;
+    }
+
+    /* IMAGE */
+
+    .profile-image {
+      width: 360px;
+      border-radius: 25px;
+      border: 3px solid gold;
+      box-shadow: 0 0 25px rgba(255, 215, 0, 0.3);
+    }
+
+    /* INFO */
+
+    .info h2 {
+      font-size: 40px;
+      color: gold;
+      margin-bottom: 15px;
+    }
+
+    .info p {
+      margin: 10px 0;
+      font-size: 18px;
+      color: #ddd;
+    }
+
+    /* STATUS */
+
+    .status {
+      margin-top: 15px;
+      display: inline-block;
+      padding: 10px 20px;
+      background: rgba(0, 255, 100, 0.1);
+      border: 1px solid lime;
+      color: lime;
+      border-radius: 10px;
+      font-weight: bold;
+    }
+
+    /* BIO */
+
+    .bio {
+      margin-top: 50px;
+    }
+
+    .bio h3 {
+      color: gold;
+      margin-bottom: 20px;
+      font-size: 28px;
+    }
+
+    .bio p {
+      color: #ccc;
+      line-height: 2;
+      font-size: 17px;
+    }
+
+    /* SKILLS */
+
+    .skills {
+      margin-top: 50px;
+    }
+
+    .skills h3 {
+      color: gold;
+      margin-bottom: 25px;
+    }
+
+    .skill {
+      margin-bottom: 20px;
+    }
+
+    .skill-name {
+      margin-bottom: 8px;
+    }
+
+    .skill-bar {
+      width: 100%;
+      height: 15px;
+      background: #111;
+      border-radius: 20px;
+      overflow: hidden;
+    }
+
+    .skill-fill {
+      height: 100%;
+      background: gold;
+    }
+
+    /* BUTTON */
+
+    .back-btn {
+      margin-top: 50px;
+      display: inline-block;
+      padding: 15px 30px;
+      background: gold;
+      color: black;
+      text-decoration: none;
+      border-radius: 12px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .back-btn:hover {
+      transform: scale(1.05);
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <img src="member/logo.png" class="bg-logo">
+
+  <div class="header">
+    <h1>FOX TEAM DATABASE</h1>
+    <p>CLASSIFIED MEMBER PROFILE</p>
+  </div>
+
+  <div class="profile-container">
+
+    <div class="top-section">
+
+      <img src="member/member1.png" class="profile-image">
+
+      <div class="info">
+        <h2>MILAD EBRAHIMI</h2>
+
+        <p><span>ID:</span> FT-001</p>
+        <p><span>RANK / CODE NAME:</span> FOX 1</p>
+        <p><span>POSITION:</span> Leader</p>
+        <p><span>Status:</span> Active</p>
+        <p><span>Date:</span> 17 NOV 2004</p>
+        <p><span>NATIONALITY:</span> IRAN</p>
+        <p><span>JOINED:</span> 2026</p>
+
+        <div class="status">
+          STATUS : ACTIVE
+        </div>
+      </div>
+
+    </div>
+
+    <div class="bio">
+      <h3>BIOGRAPHY</h3>
+
+      <p1>پرونده محرمانه — سطح دسترسی: بسیار محدود</p1>
+
+      <p> نام کامل: میلاد ابراهیمی</p>
+
+      <p>نام مستعار عملیاتی: فاکس 1</p>
+
+      <p>تاریخ تولد: ۲۵ شهریور ۱۳۸۴ (۱۶ سپتامبر ۲۰۰۵)</p>
+
+      <p>محل تولد: ایران (جزئیات دقیق محرمانه)</p>
+
+      <p>سمت فعلی: فرمانده و رهبر تیم فاکس</p>
+
+      <h4>رده نظامی: فرمانده</h4>
+
+      <p>ظاهر فیزیکی:ابراهیمی مردی درشت‌اندام با قامتی حدود ۱۸۵ سانتی‌متر است. ظاهر
+        او
+        ساده اما کاملاً حرفه‌ای و هدفمند است؛ ریش مرتب، موهای کوتاه، نگاه نافذ و سرد، و حرکاتی دقیق و حساب‌شده که نشان
+        از سال‌ها تمرین عملیاتی دارد. زخم قدیمی گلوله در قسمت پایین پای چپ او، یادگار تنها سوءقصد ناموفق علیه وی میاشد،
+        هنگام
+        راه رفتن کمی مشهود است ولی هرگز مانع تحرک سریع و دقیق او نشده.
+      </p>
+
+      <p>
+
+        سابقه تحصیلی و ورود به خدمت :ابراهیمی با مدرک دیپلم وارد عرصه عملیاتی شد. او هیچگاه به دنبال مسیرهای دانشگاهی
+        نبود و از همان ابتدا بر مهارت‌های عملی، فنی و رزمی تمرکز کرد. پس از گذران دوره‌های اولیه آموزشی سپاه پاسداران،
+        به سرعت به واحدهای ویژه عملیات منتقل شد. استعداد ذاتی او در کار مکانیکی، تعمیر و بومی‌سازی تجهیزات، همراه با
+        قدرت تحلیل تاکتیکی، باعث شد در مدت کوتاهی از یک نیروی عملیاتی ساده به یکی از عناصر کلیدی تبدیل شود.
+      </p>
+
+      <h4> تخصص‌های اصلی</h4>
+
+      <ul>
+        <li>
+          • عملیات ویژه: طراح و مجری عملیات‌های نفوذی، ترور هدفمند، تخریب و شناسایی عمیق در محیط‌های پرخطر.
+          • تحلیل و برنامه‌ریزی: توانایی در پردازش اطلاعات میدانی، پیش‌بینی حرکات دشمن و طراحی سناریوهای
+          چندلایه.
+          • فنی-مکانیکی: بالا در تعمیر، تغییر کاربری و ساخت تجهیزات خاص عملیاتی در شرایط میدانی با منابع محدود.
+          • رهبری و مدیریت: تسلط کامل بر کنترل تیم تحت فرماندهی.
+        </li>
+        <li>
+          سابقه عملیاتی (خلاصه‌ای از کارنامه): ابراهیمی در طول سال‌های خدمت، در چندین مأموریت حساس و طبقه‌بندی‌شده در
+          مناطق
+          مختلف حضور داشته است. او به عنوان طراح و مجری مستقیم چندین عملیات موفق علیه اهداف راهبردی دشمن شناخته می‌شود.
+          تمرکز اصلی فعالیت‌های او بر عملیات‌های فرامرزی، خنثی‌سازی شبکه‌های جاسوسی و ضربه به زیرساخت‌های اطلاعاتی-نظامی
+          رقبا بوده است.
+          رابطه نظامی قوی و عمیق او با بدنه فرماندهی سپاه پاسداران، به‌ویژه در حوزه عملیات‌های ویژه، باعث شده دسترسی‌های
+          عملیاتی گسترده‌ای داشته باشد. او به ندرت در چارچوب‌های اداری و بوروکراتیک عمل می‌کند و بیشتر به عنوان یک
+          فرمانده
+          میدانی-استراتژیک شناخته می‌شود.
+        </li>
+        <li> حادثه سوءقصد در یکی از مأموریت‌های عملیاتی، هدف قرار گرفتن توسط یک تیم ترور حرفه‌ای با سلاح اسنایپر قرار
+          گرفت.
+          گلوله به پای چپ او اصابت کرد اما عملیات ترور با شکست مواجه شد. ابراهیمی نه تنها زنده ماند، بلکه پس از بهبودی
+          نسبی، با همان زخم به میدان بازگشت و بعدها شخصاً در شناسایی و حذف بخشی از شبکه عاملان سوءقصد نقش کلیدی ایفا
+          کرد.
+          این حادثه او را سخت‌تر و بی‌رحم‌تر کرد.
+        </li>
+        <li> ویژگی‌های شخصیتی و سبک فرماندهی میلاد ابراهیمی فردی آرام، خونسرد و به شدت محتاط است. او به سرعت با افراد
+          غریبه
+          صمیمی نمی‌شود و فاصله حرفه‌ای خود را حفظ می‌کند. رفتار او به گونه‌ای است که به طور طبیعی دیگران را تحت کنترل و
+          مدیریت درمی‌آورد؛ بدون نیاز به فریاد یا تهدید مستقیم، اقتدار خود را تحمیل می‌کند.
+        </li>
+        <li> او یک رهبر مطلق‌گرا است. اعضای تیم «فاکس» تحت فرماندهی او، وفاداری مطلق و تا پای جان دارند. این وفاداری نه
+          از
+          روی ترس، بلکه ناشی از اعتماد عمیق به تصمیم‌گیری‌های دقیق، سرد و حساب‌شده او در شرایط بحرانی است. ابراهیمی به
+          شدت
+          مخالف ریسک‌های غیرضروری است، اما وقتی تصمیمی می‌گیرد، اجرای آن را با بی‌رحمی و دقت کامل مطالبه می‌کند.
+        </li>
+        <li> وضعیت فعلی در حال حاضر، میلاد ابراهیمی به عنوان رهبر سازمانی تیم ویژه «فاکس» فعالیت می‌کند. این تیم متشکل
+          از
+          عناصر منتخب و بسیار وفادار است که در حوزه عملیات‌های خاص، جمع‌آوری اطلاعات حساس و اجرای دستورات در سطوح بالا
+          عمل
+          می‌کنند. تحت فرماندهی او، تیم «فاکس» به یکی از واحدهای کارآمد و ترسناک در ساختار اطلاعاتی-عملیاتی تبدیل شده
+          است.
+        </li>
+      </ul>
+      <p> ارزیابی کلی:
+      </p>
+      <p> میلاد ابراهیمی نمونه‌ای کلاسیک از فرماندهان عملیاتی نسل جدید است؛ کم‌حرف، پرعمل، وفادار به آرمان، بی‌رحم نسبت
+        به
+        دشمن و دارای ذهنیت فنی-تاکتیکی قوی. او نه یک افسر اداری، بلکه یک شکارچی حرفه‌ای است که در سایه عمل می‌کند.
+      </p>
+    </div>
+
+    <div class="skills">
+
+      <h3>SPECIALIZATION</h3>
+
+      <div class="skill">
+        <div class="skill-name">Leadership</div>
+        <div class="skill-bar">
+          <div class="skill-fill" style="width:95%"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-name">Cyber Operations</div>
+        <div class="skill-bar">
+          <div class="skill-fill" style="width:90%"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-name">Intelligence Management</div>
+        <div class="skill-bar">
+          <div class="skill-fill" style="width:92%"></div>
+        </div>
+      </div>
+
+    </div>
+
+    <a href="index.html" class="back-btn">
+      RETURN TO DATABASE
+    </a>
+
+  </div>
+
+</body>
+
+</html>

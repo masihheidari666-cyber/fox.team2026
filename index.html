@@ -4,13 +4,15 @@
 
 <!DOCTYPE html>
 <html lang="fa">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>FOX TEAM</title>
 
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
   <!-- LOGIN PAGE -->
@@ -27,15 +29,9 @@
 
       <h2>MEMBER ACCESS</h2>
 
-      <input
-        type="email"
-        id="email"
-        placeholder="Email">
+      <input type="email" id="email" placeholder="Email">
 
-         <input
-        type="password"
-        id="password"
-        placeholder="Password">
+      <input type="password" id="password" placeholder="Password">
 
       <button onclick="login()">
         ENTER
@@ -46,7 +42,7 @@
     </div>
 
   </div>
-  
+
   <div id="top-bar">
     <div id="clock"></div>
     <div id="date"></div>
@@ -55,16 +51,16 @@
   <!-- MEMBERS PANEL -->
 
   <div class="panel-container hidden" id="panelBox">
-    
-  <div class="panel-bg-logo"></div>
-  
+
+    <div class="panel-bg-logo"></div>
+
     <div class="top-bar">
 
       <div class="date-time">
-     <div id="clock"></div>
-     <div id="date"></div>
+        <div id="clock"></div>
+        <div id="date"></div>
       </div>
-  
+
       <div>
         <h2>FOX TEAM MEMBERS</h2>
       </div>
@@ -82,7 +78,7 @@
 
       <!-- MEMBER 1 -->
 
-      <div class="member-card">
+      <div class="member-card" onclick="window.location.href='milad.html'" style="cursor:pointer;">
 
         <img src="member/member1.png" alt="member">
 
@@ -139,11 +135,11 @@
           <p><span>NATIONALITY:</span> IRAN</p>
           <p><span>JOINED:</span> 2026</p>
         </div>
-        
+
         <!-- MEMBER 4 -->
 
       </div>
-      
+
       <div class="member-card">
 
         <img src="member/member4.png" alt="member">
@@ -160,14 +156,15 @@
           <p><span>JOINED:</span> 2026</p>
         </div>
 
+      </div>
+
     </div>
 
-  </div>
 
-
-  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
-  <script src="member/auth.js" deref></script>
-  <script src="script.js" deref></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+    <script src="member/auth.js" deref></script>
+    <script src="script.js" deref></script>
 
 </body>
+
 </html>

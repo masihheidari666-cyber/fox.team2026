@@ -9,6 +9,7 @@
 }
 
 body {
+  font-family: 'Vazirmatn', sans-serif;
   background: #0b0b0b;
   color: white;
   font-family: Arial;
@@ -312,8 +313,10 @@ body {
   min-height: 100vh;
 }
 
-.member-card {
+.member-card * {
   background: rgba(15, 15, 15, 0.55);
+
+  pointer-events: none;
 
   backdrop-filter: blur(5px);
 
@@ -345,4 +348,49 @@ body {
 #date {
   font-size: 16px;
   color: #ccc;
+}
+
+.bio {
+  max-width: 900px;
+  margin: auto;
+  direction: rtl;
+  text-align: right;
+}
+
+.bio h3 {
+  color: gold;
+  font-size: 38px;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+}
+
+.bio h4 {
+  color: #f5c542;
+  margin-top: 35px;
+  margin-bottom: 15px;
+  font-size: 24px;
+  font-weight: 700;
+  border-right: 4px solid gold;
+  padding-right: 10px;
+}
+
+.bio p {
+  line-height: 2.4;
+  font-weight: 400;
+  margin-bottom: 18px;
+  color: #ddd;
+  font-size: 18px;
+  letter-spacing: 0.3px;
+}
+
+.bio ul {
+  padding-right: 25px;
+  margin-bottom: 25px;
+}
+
+.bio li {
+  margin-bottom: 12px;
+  line-height: 2.2;
+  color: #ccc;
+  font-size: 17px;
 }
