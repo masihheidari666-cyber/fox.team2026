@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>MILAD PROFILE</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial;
+    }
+
+    body {
+      background: #05070d;
+      color: white;
+      overflow-x: hidden;
+    }
+
+    /* BACKGROUND */
+
+    .bg-logo {
+      position: fixed;
+
+      top: 50%;
+      left: 50%;
+
+      transform: translate(-50%, -50%);
+
+      width: 1000px;
+      height: 1000px;
+
+      background-image: url("member/logo.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+
+      opacity: 0.28;
+
+      filter: blur(2px);
+
+      z-index: 0;
+
+      pointer-events: none;
+
+      animation: logoFloat 8s ease-in-out infinite;
+    }
+
+    /* HEADER */
+
+    .header {
+      width: 100%;
+      padding: 25px;
+      text-align: center;
+      border-bottom: 1px solid rgba(255, 215, 0, 0.2);
+      background: rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(8px);
+    }
+
+    .header h1 {
+      color: gold;
+      font-size: 32px;
+      letter-spacing: 3px;
+    }
+
+    .header p {
+      margin-top: 10px;
+      color: #999;
+      letter-spacing: 2px;
+    }
+
+    /* PROFILE CARD */
+
+    .profile-container {
+      width: 90%;
+      max-width: 1100px;
+      margin: 50px auto;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 215, 0, 0.2);
+      border-radius: 25px;
+      padding: 40px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 30px rgba(255, 215, 0, 0.08);
+    }
+
+    /* TOP */
+
+    .top-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      align-items: center;
+    }
+
+    /* IMAGE */
+
+    .profile-image {
+      width: 360px;
+      border-radius: 25px;
+      border: 3px solid gold;
+      box-shadow: 0 0 25px rgba(255, 215, 0, 0.3);
+    }
+
+    /* INFO */
+
+    .info h2 {
+      font-size: 40px;
+      color: gold;
+      margin-bottom: 15px;
+    }
+
+    .info p {
+      margin: 10px 0;
+      font-size: 18px;
+      color: #ddd;
+    }
+
+    /* STATUS */
+
+    .status {
+      margin-top: 15px;
+      display: inline-block;
+      padding: 10px 20px;
+      background: rgba(0, 255, 100, 0.1);
+      border: 1px solid lime;
+      color: lime;
+      border-radius: 10px;
+      font-weight: bold;
+    }
+
+    /* BIO */
+
+    .bio {
+      margin-top: 50px;
+    }
+
+    .bio h3 {
+      color: gold;
+      margin-bottom: 20px;
+      font-size: 28px;
+    }
+
+    .bio p {
+      color: #ccc;
+      line-height: 2;
+      font-size: 17px;
+    }
+
+    /* SKILLS */
+
+    .skills {
+      margin-top: 50px;
+    }
+
+    .skills h3 {
+      color: gold;
+      margin-bottom: 25px;
+    }
+
+    .skill {
+      margin-bottom: 20px;
+    }
+
+    .skill-name {
+      margin-bottom: 8px;
+    }
+
+    .skill-bar {
+      width: 100%;
+      height: 15px;
+      background: #111;
+      border-radius: 20px;
+      overflow: hidden;
+    }
+
+    .skill-fill {
+      height: 100%;
+      background: gold;
+    }
+
+    /* BUTTON */
+
+    .back-btn {
+      margin-top: 50px;
+      display: inline-block;
+      padding: 15px 30px;
+      background: gold;
+      color: black;
+      text-decoration: none;
+      border-radius: 12px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .back-btn:hover {
+      transform: scale(1.05);
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <img src="member/logo.png" class="bg-logo">
+
+  <div class="header">
+    <h1>FOX TEAM DATABASE</h1>
+    <p>CLASSIFIED MEMBER PROFILE</p>
+  </div>
+
+  <div class="profile-container">
+
+    <div class="top-section">
+
+      <img src="member/member2.jpg" class="profile-image">
+
+      <div class="info">
+        <h2>MASIH(HASHEM) HEIDARI</h2>
+
+        <p><span>ID:</span> FT-002</p>
+        <p><span>RANK / CODE NAME:</span> FOX 2</p>
+        <p><span>POSITION:</span> DEPUDY COMMANDER</p>
+        <p><span>Status:</span> Active</p>
+        <p><span>Date:</span> 28 JUN 2003</p>
+        <p><span>NATIONALITY:</span> AFGHANISTAN</p>
+        <p><span>JOINED:</span> 2026</p>
+
+        <div class="status">
+          STATUS : ACTIVE
+        </div>
+      </div>
+
+    </div>
+
+    <div class="bio">
+      <h3>BIOGRAPHY</h3>
+
+      <P>پرونده محرمانه — سطح دسترسی: بسیار محدود</P>
+
+      <P> نام کامل: مسیح(هاشم) حیدری</P>
+
+      <P>نام مستعار عملیاتی: فاکس ۲ (Fox 2)</P>
+
+      <P>تاریخ تولد: ۷ تیر ۱۳۸۲ (۲۸ ژوئن ۲۰۰۳) </P>
+
+      <P>محل تولد: ایران (جزئیات دقیق محرمانه)</P>
+
+      <P>اصل و نسب: اصالت افغانستانی</P>
+
+      <P>سمت فعلی: معاون فرماندهی تیم ویژه «فاکس» — مسئول بخش سایبری، اطلاعاتی و زیرساخت‌های فنی </P>
+
+      <P>رده: معاون فرمانده عملیاتی</P>
+
+      <P>ظاهر فیزیکی حیدری مردی نسبتاً ورزیده با بدنی ساخته‌شده از سال‌ها تمرین سخت ورزشی است. قد مناسب، چابکی و سرعت
+        بالای حرکتی، صورت همیشه صاف و کاملاً تراشیده (شش‌تیغ)، و بینی شکسته‌ای که نشان از چندین مسابقه کیک‌بوکسینگ
+        حرفه‌ای دارد. ظاهر او جدی، تیز و بدون زواید غیرضروری است؛ نگاهی نافذ و حالتی آماده برای عمل که در محیط‌های
+        عملیاتی به سرعت تشخیص داده می‌شود.
+        سوابق تحصیلی و ورود به خدمت حیدری اصالتاً افغانستانی است ولی سال‌هاست که در قالب تیم فاکس در ایران خدمت می‌کند.
+        او هم‌دوره با میلاد ابراهیمی در آکادمی آموزشی مشترک بوده و از همان مراحل اولیه با او همکاری نزدیک داشته است. او
+        نیز مانند ابراهیمی مسیر دانشگاهی را رها کرد و مستقیماً به سمت مهارت‌های عملی و تخصصی حرکت کرد. استعداد بالای او
+        در حوزه‌های سایبری و فنی از همان ابتدا شناسایی شد و سریعاً به واحدهای اطلاعاتی-فنی منتقل گردید.
+      </P>
+      <UL>
+        <P>تخصص‌های اصلی</P>
+
+        <li> •
+          عملیات سایبری و اطلاعاتی: طراحی، نفوذ، جمع‌آوری داده، ایجاد زیرساخت‌های امن و اختلال در سیستم‌های دشمن.
+        </li>
+        <li>•
+          جنگ روانی و روان‌شناختی: مهارت در بازی با ذهن دشمن، تزریق اطلاعات غلط، شایعه‌سازی هدفمند و روانشناختی.
+        </li>
+
+        <li>•
+          مبارزه تن‌به‌تن: تسلط بالا در تکنیک‌های کیک‌بوکسینگ؛ معروف به پایان سریع درگیری‌ها با «یک مشت» دقیق و ویرانگر.
+        </li>
+        <li>•
+          زبان‌های خارجی: مسلط به انگلیسی، آلمانی و تا حد قابل توجهی روسی — قابلیت ارتباط و عملیات مستقل در محیط‌های
+          بین‌المللی.
+        </li>
+        <li> •
+          سازماندهی فنی: ایجاد و نگهداری زیرساخت‌های دیجیتال امن (سایت‌های عملیاتی، دیتاسرورهای مخفی و شبکه‌های
+          ارتباطی).
+
+          سابقه عملیاتی حیدری یکی از یاران قدیمی و قابل اعتماد میلاد ابراهیمی است. او نقش کلیدی در تشکیل و ساخت اولیه
+          سازمان تیم فاکس داشته است. از جمله مهم‌ترینات او:
+        </li>
+        <li>•
+          طراحی و راه‌اندازی سایت عملیاتی تیم فاکس
+        </li>
+        <li> •
+          ایجاد و امن‌سازی دیتاسرور مخفی برای نگهداری اطلاعات حساس
+        </li>
+        •
+      </UL>
+      پشتیبانی فنی-سایبری در چندین مأموریت مهم فرامرزی
+      او همراه با میلاد ابراهیمی و علیرضا موسوی، یکی از سه عضو اصلی و قدیمی هسته اولیه تیم فاکس محسوب می‌شود. این سه نفر
+      در طول سال‌ها عملیات‌های متعدد و حساسی را با هم اجرا کرده‌اند و اعتماد مطلق بین‌شان برقرار است.
+      حیدری بیشتر در سایه فعالیت می‌کند. او کمتر در خط مقدم فیزیکی حضور دارد و تمرکز اصلی‌اش بر پشتیبانی اطلاعاتی، جنگ
+      الکترونیک و سازماندهی زیرساخت‌های فنی تیم است. با این حال، در مواقع لازم توانایی ورود مستقیم به درگیری‌های فیزیکی
+      و پایان سریع آن را نیز دارد.
+      ویژگی‌های شخصیتی و سبک عملیاتی حیدری فردی باهوش، دقیق و سرد است. او استاد بازی با روان دشمن است؛ به جای اطلاعات
+      واقعی، دروغ‌های هوشمندانه و حساب‌شده تزریق می‌کند تا دشمن را به سمت تصمیمات اشتباه سوق دهد. آرامش ظاهری او در
+      شرایط پرتنش، همراه با سرعت تصمیم‌گیری بالا، او را به عنصری خطرناک در جنگ اطلاعاتی تبدیل کرده است.
+      او به شدت وفادار به فرماندهی میلاد ابراهیمی است و در مقام معاون، مسئولیت اجرای دقیق دستورات در حوزه سایبری و
+      سازمانی را بر عهده دارد. حیدری اهل حرف اضافه نیست و بیشتر با عمل صحبت می‌کند. نظم، دقت و امنیت‌محوری از ویژگی‌های
+      بارز اوست.
+      وضعیت فعلی در حال حاضر مسیح حیدری به عنوان معاون فرماندهی تیم ویژه فاکس خدمت می‌کند. تمرکز اصلی فعالیت او بر بخش
+      سایبری، جمع‌آوری و تحلیل اطلاعات، و تقویت و سازماندهی زیرساخت‌های دیجیتال و ارتباطی تیم است. او عملاً ستون فقرات
+      فنی و اطلاعاتی تیم فاکس محسوب می‌شود و مسئولیت تضمین امنیت ارتباطات و داده‌های تیم را بر عهده دارد.
+      ارزیابی کلی:مسیح حیدری (هاشم) نمونه‌ای کامل از یک معاون فنی-عملیاتی حرفه‌ای و بی‌رحم است. ترکیبی نادر از تخصص
+      سایبری عمیق، مهارت رزمی بالا و توانمندی در جنگ روانی. او در کنار میلاد ابراهیمی و علیرضا موسوی، یکی از ارکان اصلی
+      استحکام و کارایی تیم فاکس به شمار می‌رود. حضور او تضمین‌کننده برتری اطلاعاتی و فنی تیم در محیط‌های پیچیده عملیاتی
+      است.
+    </div>
+
+    <div class="skills">
+
+      <h3>SPECIALIZATION</h3>
+
+      <div class="skill">
+        <div class="skill-name">Leadership</div>
+        <div class="skill-bar">
+          <div class="skill-fill" style="width:95%"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-name">Cyber Operations</div>
+        <div class="skill-bar">
+          <div class="skill-fill" style="width:90%"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-name">Intelligence Management</div>
+        <div class="skill-bar">
+          <div class="skill-fill" style="width:92%"></div>
+        </div>
+      </div>
+
+    </div>
+
+    <a href="index.html" class="back-btn">
+      RETURN TO DATABASE
+    </a>
+
+  </div>
+
+</body>
+
+</html>
