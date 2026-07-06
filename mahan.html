@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>MILAD PROFILE</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial;
+    }
+
+    body {
+      background: #05070d;
+      color: white;
+      overflow-x: hidden;
+    }
+
+    /* BACKGROUND */
+
+    .bg-logo {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 700px;
+      opacity: 0.06;
+      z-index: -1;
+    }
+
+    /* HEADER */
+
+    .header {
+      width: 100%;
+      padding: 25px;
+      text-align: center;
+      border-bottom: 1px solid rgba(255, 215, 0, 0.2);
+      background: rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(8px);
+    }
+
+    .header h1 {
+      color: gold;
+      font-size: 32px;
+      letter-spacing: 3px;
+    }
+
+    .header p {
+      margin-top: 10px;
+      color: #999;
+      letter-spacing: 2px;
+    }
+
+    /* PROFILE CARD */
+
+    .profile-container {
+      width: 90%;
+      max-width: 1100px;
+      margin: 50px auto;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 215, 0, 0.2);
+      border-radius: 25px;
+      padding: 40px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 30px rgba(255, 215, 0, 0.08);
+    }
+
+    /* TOP */
+
+    .top-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      align-items: center;
+    }
+
+    /* IMAGE */
+
+    .profile-image {
+      width: 260px;
+      border-radius: 25px;
+      border: 3px solid gold;
+      box-shadow: 0 0 25px rgba(255, 215, 0, 0.3);
+    }
+
+    /* INFO */
+
+    .info h2 {
+      font-size: 40px;
+      color: gold;
+      margin-bottom: 15px;
+    }
+
+    .info p {
+      margin: 10px 0;
+      font-size: 18px;
+      color: #ddd;
+    }
+
+    /* STATUS */
+
+    .status {
+      margin-top: 15px;
+      display: inline-block;
+      padding: 10px 20px;
+      background: rgba(0, 255, 100, 0.1);
+      border: 1px solid lime;
+      color: lime;
+      border-radius: 10px;
+      font-weight: bold;
+    }
+
+    /* BIO */
+
+    .bio {
+      margin-top: 50px;
+    }
+
+    .bio h3 {
+      color: gold;
+      margin-bottom: 20px;
+      font-size: 28px;
+    }
+
+    .bio p {
+      color: #ccc;
+      line-height: 2;
+      font-size: 17px;
+    }
+
+    /* SKILLS */
+
+    .skills {
+      margin-top: 50px;
+    }
+
+    .skills h3 {
+      color: gold;
+      margin-bottom: 25px;
+    }
+
+    .skill {
+      margin-bottom: 20px;
+    }
+
+    .skill-name {
+      margin-bottom: 8px;
+    }
+
+    .skill-bar {
+      width: 100%;
+      height: 15px;
+      background: #111;
+      border-radius: 20px;
+      overflow: hidden;
+    }
+
+    .skill-fill {
+      height: 100%;
+      background: gold;
+    }
+
+    /* BUTTON */
+
+    .back-btn {
+      margin-top: 50px;
+      display: inline-block;
+      padding: 15px 30px;
+      background: gold;
+      color: black;
+      text-decoration: none;
+      border-radius: 12px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .back-btn:hover {
+      transform: scale(1.05);
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <img src="member/logo.png" class="bg-logo">
+
+  <div class="header">
+    <h1>FOX TEAM DATABASE</h1>
+    <p>CLASSIFIED MEMBER PROFILE</p>
+  </div>
+
+  <div class="profile-container">
+
+    <div class="top-section">
+
+      <img src="member/member1.png" class="profile-image">
+
+      <div class="info">
+        <h2>MILAD EBRAHIMI</h2>
+
+        <p><strong>MEMBER ID:</strong> FT-004</p>
+        <p><strong>RANK:</strong> COLONEL</p>
+        <p><strong>CODE NAME:</strong> FOX 4</p>
+        <p><strong>NATIONALITY:</strong> IRAN</p>
+        <p><strong>JOINED:</strong> 2026</p>
+
+        <div class="status">
+          STATUS : ACTIVE
+        </div>
+      </div>
+
+    </div>
+
+    <div class="bio">
+      <h3>BIOGRAPHY</h3>
+
+    </div>
+
+    <div class="skills">
+
+      <h3>SPECIALIZATION</h3>
+
+      <div class="skill">
+        <div class="skill-name">Leadership</div>
+        <div class="skill-bar">
+          <div class="skill-fill" style="width:95%"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-name">Cyber Operations</div>
+        <div class="skill-bar">
+          <div class="skill-fill" style="width:90%"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-name">Intelligence Management</div>
+        <div class="skill-bar">
+          <div class="skill-fill" style="width:92%"></div>
+        </div>
+      </div>
+
+    </div>
+
+    <a href="index.html" class="back-btn">
+      RETURN TO DATABASE
+    </a>
+
+  </div>
+
+</body>
+
+</html>
